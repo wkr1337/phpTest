@@ -1,0 +1,22 @@
+<?php
+$root = dirname(__FILE__);
+include_once("config.php");
+
+echo $root; 
+$htmlString = '<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href= "css/style.css">
+    <title>Document</title>
+</head>
+<body>';
+
+$htmlString . include("$root/navbar.php");
+    
+$htmlString . 'Hi hi';
+// $htmlString = `TESTTTTTTT`;
+echo $htmlString;
+?>
